@@ -1,17 +1,32 @@
 {
-  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "simple",
   "include-component-in-tag": false,
-  "packages": {
-    ".": {
-      "extra-files": [
-        {
-          "path": "gradle/libs.versions.toml",
-          "type": "toml",
-          "search": "versionName\\s*=\\s*\"(\\d+\\.\\d+\\.\\d+)\"",
-          "replace": "versionName = \"${version}\""
-        }
-      ]
+  "changelog-path": "CHANGELOG.md",
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "🚀 Features",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "🐛 Bug Fixes",
+      "hidden": false
+    },
+    {
+      "type": "chore",
+      "section": "🧹 Maintenance",
+      "hidden": false
+    },
+    {
+      "type": "deps",
+      "section": "🔗 Dependencies",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "Refactor",
+      "hidden": false
     }
-  }
+  ]
 }
