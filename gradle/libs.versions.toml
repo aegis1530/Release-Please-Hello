@@ -1,5 +1,5 @@
 [versions]
-versionName = "1000"
+versionName = "1.0.0"
 agp = "8.8.0"
 kotlin = "2.0.0"
 coreKtx = "1.16.0"

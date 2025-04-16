@@ -13,7 +13,7 @@ android {
         minSdk = 24
         targetSdk = 35
         val versionString = libs.versions.versionName.orNull ?: "1000"
-        versionCode = versionString.toInt()
+        versionCode = 1
         versionName = libs.versions.versionName.toString()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
