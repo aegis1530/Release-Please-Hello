@@ -12,8 +12,9 @@ android {
         applicationId = "com.andy.releasepleasehello"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        val versionString = libs.versions.versionName.orNull ?: "1000"
+        versionCode = versionString.toInt()
+        versionName = libs.versions.versionName.toString()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
